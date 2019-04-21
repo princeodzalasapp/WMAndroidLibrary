@@ -1,12 +1,9 @@
 package com.princeodzalasapp.fr.wmandroidlibrary;
 
 import android.os.Bundle;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.annotation.NonNull;
-
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.TextView;
 
