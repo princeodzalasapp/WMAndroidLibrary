@@ -354,4 +354,24 @@
     <color name="md_black">#000000</color>
     <color name="md_white">#ffffff</color>
 
+    <!-- Transparence -->
+    <color name="md_Transp_noir_10">#1A000000</color>
+    <color name="md_Transp_noir_20">#33000000</color>
+    <color name="md_Transp_noir_30">#4D000000</color>
+    <color name="md_Transp_noir_40">#66000000</color>
+    <color name="md_Transp_noir_50">#80000000</color>
+    <color name="md_Transp_noir_60">#99000000</color>
+    <color name="md_Transp_noir_70">#B3000000</color>
+    <color name="md_Transp_noir_80">#CC000000</color>
+    <color name="md_Transp_noir_90">#E6000000</color>
+    <color name="md_Transp_blanc_10">#1AFFFFFF</color>
+    <color name="md_Transp_blanc_20">#33FFFFFF</color>
+    <color name="md_Transp_blanc_30">#4DFFFFFF</color>
+    <color name="md_Transp_blanc_40">#66FFFFFF</color>
+    <color name="md_Transp_blanc_50">#8FFFFFFF</color>
+    <color name="md_Transp_blanc_60">#99FFFFFF</color>
+    <color name="md_Transp_blanc_70">#B3FFFFFF</color>
+    <color name="md_Transp_blanc_80">#CCFFFFFF</color>
+    <color name="md_Transp_blanc_90">#E6FFFFFF</color>
+
 </resources>
