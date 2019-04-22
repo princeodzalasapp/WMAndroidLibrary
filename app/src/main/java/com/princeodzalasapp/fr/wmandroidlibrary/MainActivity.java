@@ -5,10 +5,26 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+
+import com.princeodzalasapp.fr.wmlibraryandroidx.Themes.ThemeColor;
+import com.princeodzalasapp.fr.wmlibraryandroidx.Themes.Themes;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mTextMessage;
+
+    private LinearLayout mContenu;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Themes.setTestColor(MainActivity.this);
+        setContentView(R.layout.activity_main);
+
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+        mContenu = findViewById(R.id.contenu);
+
+        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -17,26 +33,17 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                    Themes.setLightNoTransColor(ThemeColor.ThemeColors.BLUE, ThemeColor.ThemeColors.DEEP_ORANGE,MainActivity.this);
                     return true;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                    Themes.setLightNoTransColor(ThemeColor.ThemeColors.WHITE,ThemeColor.ThemeColors.ORANGE,MainActivity.this);
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    Themes.setLightNoTransColor(ThemeColor.ThemeColors.YELLOW,ThemeColor.ThemeColors.INDIGO,MainActivity.this);
                     return true;
             }
             return false;
         }
     };
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-    }
 
 }

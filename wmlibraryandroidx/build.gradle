@@ -21,8 +21,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = '1.6'
-        targetCompatibility = '1.6'
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
     }
     buildToolsVersion = '28.0.3'
 
@@ -32,6 +32,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Android
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:customtabs:28.0.0'
@@ -41,6 +42,8 @@ dependencies {
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:gridlayout-v7:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:preference-v14:28.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha4'
 
 
@@ -50,6 +53,9 @@ dependencies {
 
     // Recycler Adapter
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    // Thèmes
+    implementation 'com.github.garretyoder:Colorful:1.7'
 
     //Image Loader
     implementation 'com.github.abdularis:CircularImageView:v1.2'
